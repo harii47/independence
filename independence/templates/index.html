@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Independence Day</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+    <style>
+        i{margin-left:1100px }
+        body{background: orange}
+        video{width: 1335px}
+        p
+        {
+            font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace;
+            font-size: medium;
+            color: #0b2e13;
+        }
+    </style>
+
+</head>
+<body>
+<h4>{{ date }} <i> {{ time }}</i></h4>
+<video src="{% static 'nandini.mp4' %}" type="video/mp4"></video><br>
+
+<p>
+    <marquee><h1>KHUDIRAM BOSE,  CHANDRA SHEKHAR AZAD, RAM ORASHAD BISMIL,  BHAGAT SINGH,  UDHAM SINGH,   VANCHINATHAM,   HEMU KALANI,    ASHFAQULLA KHAN,    SACHINDRA BAKSHI,    MANMATH NATH GUPTA</h1></marquee>
+    <marquee><h2>VASUDEV BALWANT PHADKE,    ANANT LAXMAN KANHERE,    KRISHNAJI GOPAL KARVE,    GANESH DAMODAR SAVARKAR,    BAGHA JTIN,    BATUKESHWAR DUTT,   SUKHDEV THAPAR,    SHIVARAM HARI RAJGURU,</h2></marquee>
+    <marquee><h3>ROSHAN SINGH,    PRITILATA WADDEDAR,    JATINDRA NATH DAS,    DURGAWATI DEVI(DURGA BHABI),    DURGAWATI CHARAN VOHRA,    MADAN LAL DHINGRA,    ALLURI SITARAM RAJU,    KUSHAL KONWAR,</h3></marquee>
+    <marquee><h4>SURYA SEN(MASTERDA),    ANANTA SINGH,    SRI AUROBINDO GHOSE,    RASH BEHARI BOSE,    UBAIDULLAH SINDHI,    JOGESH CHANDRA CHATTERJEE,    BAIKUNTHA SHUKLA,    AMBIKA CHAKRABARTY,</h4></marquee>
+    <marquee><h5>BADAL GUPTA,    DINESH GUPTA,    BENOY BASU,    RAJENDRA LAHIRI,    BARINDRA KUMAR GHOSH,    PRAFULLA CHAKI,    ULLASKAR DUTTA,    HEMCHANDRA KANUNGO,    BASAWON SINGH(SINHA),</h5></marquee>
+    <marquee><h6>BHAVABHUSHUN MITRA,    BINA DAS,    VEER BHAI KOTWAL,    RANI LAKSHMI BAI,    OM PRAKASH VIJ</h6></marquee>
+</p>
+<video src="{% static 'Tere Sang Yaara.mp4' %}" type="video/mp4" ></video><br>
+<embed src="https://www.youtube.com/watch?v=uTDMVdzIhqQ" allowfullscreen="true" width="410" height="344">
+<input name="name" placeholder="Enter Name" type="text"><br>
+<button class="bg-danger" type="submit" value="Submit">Submit</button>
+
+</body>
+</html>
